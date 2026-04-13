@@ -6,12 +6,12 @@ export const CHART_INFO = {
   map: {
     title: "Regional activity (choropleth map)",
     guide: [
-      "Each province or territory is coloured by the selected metric over your week range (or one week at a time while playback is running). Darker colours mean higher values on the shared yellow–orange–red scale.",
+      "Each province or territory is coloured by the selected metric. Darker colours mean higher values on the shared yellow–orange–red scale.",
       "Click a province to focus the temporal trend chart on that region versus national. Hover for the value; hatched northern areas may reflect low test volume—interpret cautiously.",
     ],
     notes: [
-      "Map values are range totals over the selected weeks for count metrics; positivity uses comparable units with the heatmap when both are shown.",
-      "Double-click the map to reset pan/zoom. Use Reset selection to clear the chosen province and restore the full week span (same as the sidebar).",
+      "Map values are range totals for count metrics; positivity uses comparable units with the heatmap when both are shown.",
+      "Use Reset selection to clear the chosen province and restore the full week span (same as the sidebar).",
     ],
   },
   heatmap: {
@@ -19,10 +19,6 @@ export const CHART_INFO = {
     guide: [
       "Rows are the provinces; columns are surveillance weeks inside your range. Colour uses the same ramp as the choropleth; for count metrics the legend’s numeric scale can differ from the map because cells are single-week values while the map aggregates over the range.",
       "Click a row label to select a province for the main trend chart. Hover a cell for that province, week, and value.",
-    ],
-    notes: [
-      "Axis labels show every 4th week; grid lines help align weeks across rows.",
-      "When positivity is selected, the heatmap shares the same percentage scale maximum as the map where applicable.",
     ],
   },
   trend: {
