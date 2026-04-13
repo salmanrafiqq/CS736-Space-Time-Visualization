@@ -757,7 +757,7 @@ export default function App() {
             <p className="panel-desc">
               {playbackRunning
                 ? `Animation: one week at a time (${playbackWeekLabel}). Pause to explore a static map again.`
-                : "Values aggregate the selected metric over the week range (or use Play to step through weeks). Click a province to compare its trend to the national line. Scroll or pinch to zoom, drag to pan; double-click the map to reset the view."}
+                : "Values reflect the selected metric over the current week range. Click a province to compare its trend with national. Use the map controls to zoom, pan, or reset."}
             </p>
             <div className="map-toolbar">
               <button
@@ -863,8 +863,7 @@ export default function App() {
             </div>
             <p className="panel-metric-note">{heatmapPanelMetricNote}</p>
             <p className="panel-desc">
-              Rows are provinces; columns are weeks in range. Axis labels every 4th week; vertical lines mark
-              weeks (major every 4th). Click a row label to select a province.
+              Rows are provinces; columns are weeks in range. Click a row label to select a province.
             </p>
             <div className="heatmap-legend-row">
               <Legend
