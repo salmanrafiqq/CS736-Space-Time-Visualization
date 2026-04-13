@@ -754,11 +754,6 @@ export default function App() {
               <ChartInfoButton chartId="map" />
             </div>
             <p className="panel-metric-note">{mapPanelMetricNote}</p>
-            <p className="panel-desc">
-              {playbackRunning
-                ? `Animation: one week at a time (${playbackWeekLabel}). Pause to explore a static map again.`
-                : "Values reflect the selected metric over the current week range. Click a province to compare its trend with national. Use the map controls to zoom, pan, or reset."}
-            </p>
             <div className="map-toolbar">
               <button
                 type="button"
@@ -862,9 +857,6 @@ export default function App() {
               <ChartInfoButton chartId="heatmap" />
             </div>
             <p className="panel-metric-note">{heatmapPanelMetricNote}</p>
-            <p className="panel-desc">
-              Rows are provinces; columns are weeks in range. Click a row label to select a province.
-            </p>
             <div className="heatmap-legend-row">
               <Legend
                 key={`heat-legend-${selectedMetric}`}
